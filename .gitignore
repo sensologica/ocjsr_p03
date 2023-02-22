@@ -3,3 +3,6 @@
 
 # Ignore brief directory
 brief/
+
+# Ignore temporary Vim files
+*.swp
