@@ -1,2 +1,5 @@
 # Ignore GIMP files
 *.xcf
+
+# Ignore brief directory
+brief/
