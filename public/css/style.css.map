@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../../sass/base/_typography.scss","../../sass/base/_reset.scss"],"names":[],"mappings":"AACQ,wGCDR,KACE,sBAGF,EACE,mBAGF,gFAOE,UACA,SAGF,EACE,WACA,qBAGF,GACE,qBAGF,OACE,eACA,+BACA,SAGF,IACE,WACA,YACA,iBDjCF,KACE,oDAIA,eACA","file":"style.css"}
