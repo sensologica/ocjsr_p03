@@ -1,0 +1,19 @@
+{
+  "name": "ocjsr_p03",
+  "version": "1.0.0",
+  "description": "ocjsr_p03",
+  "main": "./index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensologica/ocjsr_p03.git"
+  },
+  "author": "Artem Barinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sensologica/ocjsr_p03/issues"
+  },
+  "homepage": "https://github.com/sensologica/ocjsr_p03#readme"
+}
