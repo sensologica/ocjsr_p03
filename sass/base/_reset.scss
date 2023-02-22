@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html, body,
+header, footer, nav, menu,
+section, article,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
