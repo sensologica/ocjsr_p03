@@ -1,0 +1,19 @@
+.like-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 22px;
+    height: auto;
+  }
+
+  .filled {
+    position: absolute;
+    display: none;
+  }
+
+  &:hover {
+    opacity: 50%;
+  }
+}

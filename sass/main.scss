@@ -1,6 +1,12 @@
 @import 'base/reset';
 @import 'base/typography';
+
 @import 'abstracts/variables';
+
+@import 'layout/restaurants';
+
 @import 'components/restaurant-card';
+@import 'components/like-button';
 @import 'components/badge';
+
 @import 'pages/index';

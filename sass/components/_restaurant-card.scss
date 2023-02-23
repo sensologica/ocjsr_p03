@@ -1,25 +1,30 @@
 .restaurant-card {
+  background-color: #FFFFFF;
   border-radius: 15px;
   overflow: hidden;
-}
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 
-.restaurant-card__img-cont {
-  position: relative;
-  margin-bottom: 16px;
-}
+  &__img-cont {
+    position: relative;
+    aspect-ratio: 2 / 1;
+  }
 
-.restaurant-card__img {
-}
+  &__info {
+    padding: 16px 24px 16px 12px;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.restaurant-card__restaurant-name {
-  font-size: 1.125rem; /* 18px */
-  font-weight: 700; /* Bold */
-  margin-bottom: 6px;
-}
-
-.restaurant-card__restaurant-address {
-  font-size: 1.063rem; /* 17px */
-  font-weight: 300; /* Light */
+  &__restaurant-name {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 700; /* Bold */
+    margin-bottom: 6px;
+  }
+  
+  &__restaurant-address {
+    font-size: 1.063rem; /* 17px */
+    font-weight: 300; /* Light */
+  }
 }
 
 .badge {
