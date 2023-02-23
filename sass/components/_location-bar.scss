@@ -1,0 +1,11 @@
+.location-bar {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  margin-left: -16px; /* For optical balance */
+  font-weight: 500; /* Medium */
+  color: $gray-dark;
+  background-color: $gray-medium;
+}
