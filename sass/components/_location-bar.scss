@@ -2,10 +2,14 @@
   display: flex; /* Set this to `none` to hide */
   justify-content: center;
   gap: 17px;
-  padding-top: 16px;
-  padding-bottom: 18px;
+  padding: 16px 0;
   margin-left: -16px; /* For optical balance */
   font-weight: 500; /* Medium */
   color: $gray-dark;
   background-color: $gray-medium;
+
+  &__icon {
+    height: 16px;
+    width: auto;
+  }
 }
