@@ -9,6 +9,7 @@ html {
 html, body,
 header, footer, nav, menu,
 section, article,
+div, span,
 h1, h2, h3, h4, h5, h6,
 ul, ol, li,
 p,
@@ -33,6 +34,7 @@ button {
 }
 
 img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;

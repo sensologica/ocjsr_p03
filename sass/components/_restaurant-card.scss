@@ -1,0 +1,29 @@
+.restaurant-card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.restaurant-card__img-cont {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.restaurant-card__img {
+}
+
+.restaurant-card__restaurant-name {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700; /* Bold */
+  margin-bottom: 6px;
+}
+
+.restaurant-card__restaurant-address {
+  font-size: 1.063rem; /* 17px */
+  font-weight: 300; /* Light */
+}
+
+.badge {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
