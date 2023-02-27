@@ -4,6 +4,7 @@
   align-items: center;
   background-color: $gray-light;
   padding: 40px 24px 58px 24px;
+  margin-bottom: 48px;
 
   > h1 {
     font-size: 1.5rem; /* 24px */
@@ -16,5 +17,72 @@
     font-weight: 300; /* Light */
     text-align: center;
     margin-bottom: 32px;
+  }
+}
+
+.functioning {
+  padding: 0 20px;
+  margin-bottom: 68px;
+
+  > h2 {
+    margin-bottom: 26px;
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.functioning-card {
+  display: flex;
+  align-items: center;
+  margin-left: -12px;
+
+  &__number {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    left: 12px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: $purple;
+    border-radius: 12px;
+  }
+
+  &__inner-container {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    flex-grow: 1;
+    background-color: $gray-light;
+    padding: 26px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+    > h3 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    &.highlight {
+      background-color: #F5EDFF;
+
+      > i {
+        color: $purple;
+      }
+    }
+  }
+
+  &__icon {
+    text-align: center;
+    width: 24px;
+    font-size: 20px;
+    color: #7E7E7E;
   }
 }
