@@ -1,0 +1,59 @@
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+  &__text-container {
+    flex-grow: 1;
+    padding: 12px 24px 12px 12px;
+    min-width: 0; // This is required to make the ellipsis work.
+  }
+
+  &__name {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500; /* Medium */
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  &__description-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    font-size: 0.938rem; /* 15px */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 20px;
+  }
+
+  &__price {
+    font-size: 0.938rem; /* 15px */
+    font-weight: 700; /* Bold */
+    color: $gray-dark;
+  }
+
+  &:hover .select-button {
+    // Animation
+  }
+}
+
+.select-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  background-color: $mint-light;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

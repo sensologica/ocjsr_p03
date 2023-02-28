@@ -8,6 +8,10 @@
     position: absolute;
     top: 26px;
     left: 23px;
+
+    &_visible {
+      display: block;
+    }
   }
 
   &__back-button-icon {

@@ -1,0 +1,24 @@
+.menu {
+  position: relative;
+  background-color: $gray-light;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -40px;
+
+  &__heading-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+    > h1 {
+      font-family: "Shrikhand";
+      font-size: 1.75rem; /* 28px */
+      font-weight: 400;
+      color: #101010;
+    }
+  }
+}

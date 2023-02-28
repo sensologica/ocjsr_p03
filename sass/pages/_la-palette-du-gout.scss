@@ -1,0 +1,28 @@
+.menu__section {
+  margin: 0 13px 40px 13px;
+
+  > h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 300; /* Light */
+  }
+}
+
+.menu-items-container {
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background-color: $mint-light;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+}
