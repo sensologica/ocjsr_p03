@@ -42,52 +42,14 @@
 
   &:hover .select-button {
     animation-name: reveal-select-button;
-    animation-duration: 350ms;
-    animation-fill-mode: forwards;
+    animation-duration: 250ms;
+    animation-delay: 25ms;
     animation-timing-function: cubic-bezier(0.85,0,0,1);
   }
 
   &:hover .select-button__icon {
     animation-name: scale-icon;
     animation-duration: 450ms;
-  }
-}
-
-@keyframes reveal-select-button {
-  40% {
-    opacity: 0.8;
-  }
-  50% {
-    margin-right: 0px;
-  }
-  100% {
-    margin-right: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes hide-select-button {
-  0% {
-    margin-right: 0px;
-  }
-  90% {
-    opacity: 0; 
-  }
-  100% {
-    margin-right: -60px;
-    opacity: 0;
-  }
-}
-
-@keyframes scale-icon {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.15);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 
