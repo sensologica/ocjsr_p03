@@ -23,6 +23,7 @@
   }
 
   &:hover:before {
-    opacity: 1;  
+    opacity: 1;
+    transition-duration: 200ms;
   }
 }
