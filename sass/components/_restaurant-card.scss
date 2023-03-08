@@ -3,6 +3,8 @@
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
 
   &__img-cont {
     position: relative;
@@ -24,6 +26,10 @@
   &__restaurant-address {
     font-size: 1.063rem; /* 17px */
     font-weight: 300; /* Light */
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
