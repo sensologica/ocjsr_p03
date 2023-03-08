@@ -7,6 +7,10 @@
   border-top-right-radius: 40px;
   margin-top: -40px;
 
+  &__hero-image {
+    height: 275px;
+  }
+
   &__heading-container {
     display: flex;
     justify-content: space-between;
