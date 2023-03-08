@@ -31,3 +31,12 @@
     transform: scale(1);
   }
 }
+
+@keyframes fill-heart {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1.025);
+  }
+}

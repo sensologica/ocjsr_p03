@@ -1,19 +1,33 @@
 .like-button {
   position: relative;
+  flex: 0 0 22px;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &__icon {
     width: 22px;
     height: auto;
-  }
-
-  .filled {
     position: absolute;
-    display: none;
   }
 
-  &:hover {
-    opacity: 50%;
+  &__icon_outline {
+    transition-duration: 200ms;
+  }
+
+  &__icon_filled {
+    opacity: 0.25;
+    transform: scale(0);
+    transition-duration: 200ms;
+  }
+
+  &:hover > .like-button__icon_outline {
+    opacity: 0;
+  }
+
+  &:hover > .like-button__icon_filled {
+    opacity: 1;
+    transform: scale(1);
+    transition-timing-function: cubic-bezier(.4,.8,.8,1.3);
   }
 }
