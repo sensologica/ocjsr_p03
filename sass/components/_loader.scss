@@ -1,0 +1,79 @@
+.loader__background {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(88, 55, 128, 0.95);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-duration: 3s;
+  animation-name: on-load;
+  animation-delay: 3s;
+  opacity: 1;
+  animation-fill-mode: forwards;
+}
+
+.loader__container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.5,0,.5,1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.loader__particle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $pink;
+
+  &_edge {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+
+  &_center {
+    animation-name: scale-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.5,0,.5,1);
+    animation-direction: alternate;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(720deg) scale(1.5);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(3);
+  }
+}
+
+@keyframes on-load {
+  100% {
+    visibility: hidden;
+  }
+}
