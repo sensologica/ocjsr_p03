@@ -1,5 +1,6 @@
 @keyframes reveal-select-button {
   0% {
+    visibility: hidden;
     opacity: 0.25;
   }
   100% {
@@ -8,17 +9,17 @@
   }
 }
 
-@keyframes hide-select-button {
-  0% {
-    margin-right: 0px;
-  }
-  90% {
-    opacity: 0; 
-  }
-  100% {
-    margin-right: -60px;
-  }
-}
+// @keyframes hide-select-button {
+//   0% {
+//     margin-right: 0px;
+//   }
+//   90% {
+//     opacity: 0; 
+//   }
+//   100% {
+//     margin-right: -60px;
+//   }
+// }
 
 @keyframes scale-icon {
   0% {
@@ -33,7 +34,9 @@
 }
 
 @keyframes fill-heart {
-  0% {
+  0% { 
+    visibility: hidden;
+    opacity: 0;
     transform: scale(1, 0);
   }
   100% {

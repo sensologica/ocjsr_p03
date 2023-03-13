@@ -60,8 +60,9 @@
   min-width: 60px;
   margin-right: -60px;
   background-color: $mint-light;
+  opacity: 0;
 
-  animation-name: hide-select-button;
+  // animation-name: hide-select-button;
   animation-duration: 250ms;
   animation-fill-mode: forwards;
 

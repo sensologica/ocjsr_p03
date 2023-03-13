@@ -1,79 +1,77 @@
-.loader__background {
+.loader-screen {
   position: fixed;
-  z-index: 99;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(88, 55, 128, 0.95);
-
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: $gray-dark_95;
+  animation-name: show-loader;
   animation-duration: 3s;
-  animation-name: on-load;
-  animation-delay: 3s;
-  opacity: 1;
   animation-fill-mode: forwards;
 }
 
-.loader__container {
+@keyframes show-loader {
+  100% {
+    visibility: hidden;
+  }
+}
+
+.spinner {
+  position: relative;
   width: 80px;
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  animation-name: loading;
-  animation-duration: 2s;
-  animation-timing-function: cubic-bezier(.5,0,.5,1);
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
-.loader__particle {
+.spinner__particle {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: $pink;
+  background-color: $mint-light;
+  animation-name: move-particle;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 
-  &_edge {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
+  &_1 { animation-delay: 0.00s; }
+  &_2 { animation-delay: 0.15s; }
+  &_3 { animation-delay: 0.30s; }
+}
+
+@keyframes move-particle {
+  60%  { transform: translate(0, -25px); }
+}
+
+.spinner__particle-outline {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid $mint-light;
+  animation-name: fade-outline;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+
+  &_1 {
+    left: 0px;
+    animation-delay: 0s;
   }
-
-  &_center {
-    animation-name: scale-up;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(.5,0,.5,1);
-    animation-direction: alternate;
+  &_2 {
+    left: 32px;
+    animation-delay: 0.15s;
+  }
+  &_3 {
+    left: 64px;
+    animation-delay: 0.3s;
   }
 }
 
-@keyframes loading {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-
-  100% {
-    transform: rotate(720deg) scale(1.5);
-  }
-}
-
-@keyframes scale-up {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(3);
-  }
-}
-
-@keyframes on-load {
-  100% {
-    visibility: hidden;
-  }
+@keyframes fade-outline {
+  25% { opacity: 100%; }
+  95% { opacity: 0%; }
 }

@@ -16,7 +16,8 @@
   }
 
   &__icon_filled {
-    opacity: 0.25;
+    // visibility: hidden;
+    opacity: 0;
     transform: scale(0);
     transition-duration: 200ms;
   }
@@ -29,5 +30,6 @@
     opacity: 1;
     transform: scale(1);
     transition-timing-function: cubic-bezier(.4,.8,.8,1.3);
+    
   }
 }
