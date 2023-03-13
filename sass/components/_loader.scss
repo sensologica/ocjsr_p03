@@ -1,4 +1,7 @@
 .loader-screen {
+  // Remove before submitting
+  visibility: hidden;
+
   position: fixed;
   z-index: 1;
   width: 100vw;

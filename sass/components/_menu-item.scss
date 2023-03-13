@@ -43,12 +43,11 @@
   &:hover .select-button {
     animation-name: reveal-select-button;
     animation-duration: 250ms;
-    animation-delay: 25ms;
-    animation-timing-function: cubic-bezier(0.85,0,0,1);
+    animation-fill-mode: forwards;
   }
 
   &:hover .select-button__icon {
-    animation-name: scale-icon;
+    animation-name: rotate-icon;
     animation-duration: 450ms;
   }
 }
@@ -60,11 +59,8 @@
   min-width: 60px;
   margin-right: -60px;
   background-color: $mint-light;
-  opacity: 0;
-
-  // animation-name: hide-select-button;
+  animation-name: hide-select-button;
   animation-duration: 250ms;
-  animation-fill-mode: forwards;
 
   &__icon {
     width: 20px;
@@ -73,36 +69,15 @@
 }
 
 @keyframes reveal-select-button {
-  0% {
-    visibility: hidden;
-    opacity: 0.25;
-  }
-  100% {
-    margin-right: 0px;
-    opacity: 1;
-  }
+  100% { margin-right: 0px; }
 }
 
-// @keyframes hide-select-button {
-//   0% {
-//     margin-right: 0px;
-//   }
-//   90% {
-//     opacity: 0; 
-//   }
-//   100% {
-//     margin-right: -60px;
-//   }
-// }
+@keyframes hide-select-button {
+  0%   { margin-right: 0px; }
+  100% { margin-right: -60px; }
+}
 
-@keyframes scale-icon {
-  0% {
-    transform: scale(0);
-  }
-  30% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
+@keyframes rotate-icon {
+  0%   { transform: rotate(90deg); }
+  100% { transform: rotate(360deg); }
 }
