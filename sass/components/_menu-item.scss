@@ -4,6 +4,7 @@
   background-color: #FFFFFF;
   border-radius: 15px;
   overflow: hidden;
+  opacity: 0;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 
   &__text-container {
@@ -47,6 +48,28 @@
   &:hover .select-button__icon {
     animation-name: rotate-icon;
     animation-duration: 450ms;
+  }
+}
+
+.menu-items-container .menu-item {
+  animation-name: staggered-reveal;
+  animation-duration: 750ms;
+  animation-fill-mode: forwards;
+}
+ 
+.menu-item:nth-child(1) { animation-delay: 250ms; }
+.menu-item:nth-child(2) { animation-delay: 400ms; }
+.menu-item:nth-child(3) { animation-delay: 550ms; }
+.menu-item:nth-child(4) { animation-delay: 700ms; }
+
+@keyframes staggered-reveal {
+  0% {
+    opacity: 0;
+    transform: translate(0, 24px);
+  }
+  100% {
+    opacity: 1;
+    tranform: translate(0);
   }
 }
 
